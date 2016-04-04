@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchBranchActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccf" >
+
+        <ImageView
+            android:id="@+id/iv_home1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="网点查询"
+            android:textColor="#fff"
+            android:textSize="20sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/sp_search_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_search_branch"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/sp_more" />
+    
+    <Button 
+        android:id="@+id/bt_search_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_search_branch"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="查询"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="@drawable/bt_bg"/>
+    
+    <ImageView 
+        android:id="@+id/iv_search_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_search_branch"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/shadow"
+        android:scaleType="centerCrop"/>
+    
+  <ListView 
+      android:id="@+id/lv_search_branch"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/iv_search_branch"
+      android:background="#cff"></ListView>
+
+</RelativeLayout>

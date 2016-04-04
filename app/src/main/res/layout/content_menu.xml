@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lee.android.airlinebookingapplication.MenuActivity"
+    tools:showIn="@layout/activity_menu"
+    android:background="@drawable/main_bg">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bt_search_branch"
+        android:id="@+id/ib_search_branch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/black"
+        android:onClick="doClick"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_search_flight_plan"
+        android:layout_below="@+id/ib_search_branch"
+        android:src="@drawable/bt_search_flight_plan"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:onClick="doClick"/>
+
+</RelativeLayout>

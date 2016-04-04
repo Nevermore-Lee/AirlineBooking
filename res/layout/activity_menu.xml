@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@drawable/main_bg" >
+    
+    <ImageButton 
+        android:id="@+id/imbt_search_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/bt_search_branch"
+        android:background="@android:color/black"
+        />
+    <ImageButton 
+        android:id="@+id/imbt_search_flight_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imbt_search_branch"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/bt_search_flight_plan"
+        android:background="@android:color/black"
+        />
+
+</RelativeLayout>
